@@ -1,0 +1,23 @@
+{
+  "name": "learning_flexbox",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sendruck/Learning_flexbox.git"
+  },
+  "author": "Olexandr Yakovenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sendruck/Learning_flexbox/issues"
+  },
+  "homepage": "https://github.com/sendruck/Learning_flexbox#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-server-livereload": "^1.9.2"
+  }
+}
