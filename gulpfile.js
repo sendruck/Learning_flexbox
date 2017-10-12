@@ -6,11 +6,11 @@ jade = require('gulp-jade');
 
 gulp.task('templates', function() {
  
-  gulp.src('templ/nested-menu.jade')
+  gulp.src('templ/grid-vs-stack.jade')
     .pipe(jade({
       pretty: true   
     }))
-    .pipe(gulp.dest('example-2'))
+    .pipe(gulp.dest('example-3'))
     .pipe(notify({ message: 'Your Jade file has been molded into HTML.' }))    
 });
 
@@ -18,7 +18,7 @@ gulp.task('webserver', function() {
   gulp.src('')
     .pipe(server({
       livereload: true,
-      defaultFile: 'example-2/nested-menu.html',
+      defaultFile: 'example-3/grid-vs-stack.html',
       directoryListing: false,
       open: false
     }));

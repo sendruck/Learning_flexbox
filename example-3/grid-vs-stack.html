@@ -1,0 +1,59 @@
+
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="example-3/style.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.1.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <li><a>Home</a></li>
+          <li><a>About</a></li>
+          <li><a>Store</a></li>
+          <li><a>Contact</a></li>
+        </ul>
+        <ul class="social">
+          <li><a class="fb">Facebook</a></li>
+          <li> <a class="tw">Twitter</a></li>
+        </ul>
+      </nav>
+      <div style="margin: 20px;"> <span>Layout</span><a href="#" class="stack">Stack </a><a href="#" class="grid">Grid </a></div>
+      <section id="blocks">
+                <article>
+                  <h2>I pity the fool...</h2>
+                  <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, n</p>
+                </article>
+                <article>
+                  <h2>Get to the chopper...</h2>
+                  <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit vel</p>
+                </article>
+                <article>
+                  <h2>What's a horse doing on a spaceship...?</h2>
+                  <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit</p>
+                </article>
+                <article>
+                  <h2>I pity the fool...</h2>
+                  <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, n</p>
+                </article>
+                <article>
+                  <h2>Get to the chopper...</h2>
+                  <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit vel</p>
+                </article>
+                <article>
+                  <h2>What's a horse doing on a spaceship...?</h2>
+                  <p>Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit</p>
+                </article>
+      </section>
+    </div>
+  </body>
+  <script>
+    $("a.stack").on("click", function() {
+    $("article").addClass("stack");
+    });
+    $("a.grid").on("click", function() {
+    $("article").removeClass("stack");
+    })
+  </script>
+</html>

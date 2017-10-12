@@ -1,0 +1,48 @@
+html
+  head
+    title
+    link(rel="stylesheet" type="text/css" href="example-3/style.css")
+    script(src="https://code.jquery.com/jquery-1.12.1.js")
+  body
+    .wrapper
+      nav
+        ul
+          li
+            a Home
+          li
+            a About
+          li
+            a Store
+          li
+            a Contact
+
+        ul.social
+          li
+            a.fb Facebook
+          li 
+            a.tw Twitter
+      
+      div(style="margin: 20px;")  
+        span Layout
+        a.stack(href="#") Stack 
+        a.grid(href="#") Grid 
+
+      section#blocks
+        mixin artickle(heading, paragraph)
+          article
+            h2 #{heading}
+            p #{paragraph}
+        
+        +artickle("I pity the fool...", "Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, n")
+        +artickle("Get to the chopper...", "Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit vel")
+        +artickle("What's a horse doing on a spaceship...?", "Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit")
+        +artickle("I pity the fool...", "Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit, n")
+        +artickle("Get to the chopper...", "Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit vel")
+        +artickle("What's a horse doing on a spaceship...?", "Etiam aliquam sem ac velit feugiat elementum. Nunc eu elit velit")
+  script
+    $("a.stack").on("click", function() {
+    $("article").addClass("stack");
+    });
+    $("a.grid").on("click", function() {
+    $("article").removeClass("stack");
+    })

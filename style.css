@@ -16,7 +16,8 @@ body{
 .flex-container {
         display: flex;
         background: #fff;
-        flex-wrap: wrap;        
+        flex-wrap: wrap;
+        flex-flow: column;
 }
 
 .box {
