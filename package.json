@@ -18,6 +18,8 @@
   "homepage": "https://github.com/sendruck/Learning_flexbox#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-notify": "^3.0.0",
     "gulp-server-livereload": "^1.9.2"
   }
 }
